@@ -12,3 +12,9 @@ describe('First two terms', function() {
       assert.strictEqual(main.fibonacci(1), 1);
     });
 });
+
+describe('Negative input', function() {
+  it('should return NaN for negative input', function() {
+      assert.strictEqual(isNaN(main.fibonacci(-5)), true);
+    });
+});
